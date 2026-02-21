@@ -24,18 +24,34 @@
     font-weight: normal; /* Nadpisy nebudou zbytečně tučné */
   }
 
-  /* HLAVIČKA WEBU (Zlatá linka) */
-  header { 
+ 
+  header 
+  nav { 
+    margin-top: 20px; 
+  }
+  nav a { 
+    margin: 0 15px; /* Mezery mezi odkazy v menu */
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    text-transform: uppercase; /* Všechna písmena budou velká */
+    font-size: 14px; 
+    letter-spacing: 1px; /* Větší mezery mezi písmeny pro elegantní vzhled */
+    color: #888888; /* Šedá barva nevybraného odkazu */
+  }
+  nav a:hover, nav a.aktivni {
+    color: #D4AF37; /* Zlatá barva po najetí myší nebo pro aktivní stránku */
+    text-decoration: none;
+  }
+  
+  { 
     text-align: center; 
     border-bottom: 2px solid #D4AF37; /* Zlatá oddělovací čára */
     padding-bottom: 30px; 
     margin-bottom: 50px;
   }
 
-  /* ODKAZY (Zlatá) */
   a { 
-    color: #D4AF37; /* Zlatá barva odkazů */
-    text-decoration: none; /* Odstraní podtržení odkazů */
+    color: #D4AF37;
+    text-decoration: none;
   }
   a:hover { 
     text-decoration: underline; /* Podtrhne odkaz, když na něj najedeš myší */
@@ -59,7 +75,10 @@
 </style>
 </head>
 <body>
-
+<nav>
+    <a href="index.html" class="aktivni">Blog</a>
+    <a href="o-mne.html">O mně</a>
+  </nav>
 <header>
   <h1>Patrik Voříšek</h1>
   <p class="sedy-text">Vítejte</p>
