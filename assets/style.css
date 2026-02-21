@@ -38,7 +38,18 @@ nav a {
 nav a:hover {
   color: #D4AF37; /* Zlatá barva po najetí myší */
 }
+/* Styl pro aktivní odkaz v menu */
+nav a.active {
+  color: #D4AF37; /* Tvá zlatá barva */
+  font-weight: bold;
+  border-bottom: 1px solid #D4AF37; /* Volitelné: jemná zlatá linka pod textem v menu */
+}
 
+/* Aby jméno v banneru nemělo podtržení, i když je to teď odkaz */
+header h1 a {
+  color: #000000;
+  text-decoration: none;
+}
 /* TVOJE JMÉNO V BANNERU */
 header h1 {
   font-family: 'Raleway', sans-serif;
