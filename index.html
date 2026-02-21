@@ -2,20 +2,81 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<title>Můj blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan Voříšek | Osobní blog</title>
 <style>
-body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
-header { text-align: center; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
-img { max-width: 100%; height: auto; }
+  /* ZÁKLADNÍ NASTAVENÍ STRÁNKY (Bílá, tmavě šedá) */
+  body { 
+    font-family: Georgia, serif; /* Elegantní knižní písmo pro text */
+    color: #333333; /* Tmavě šedá barva textu, je příjemnější na oči než čistá černá */
+    background-color: #FFFFFF; /* Čistě bílé pozadí */
+    max-width: 700px; /* Úzký sloupec textu, aby se dobře četl (jako na fs.blog) */
+    margin: 0 auto; 
+    padding: 40px 20px; 
+    line-height: 1.8; /* Větší mezery mezi řádky pro vzdušnost */
+    font-size: 18px;
+  }
+
+  /* NADPISY (Černá) */
+  h1, h2, h3 { 
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Čisté a moderní písmo pro nadpisy */
+    color: #000000; 
+    font-weight: normal; /* Nadpisy nebudou zbytečně tučné */
+  }
+
+  /* HLAVIČKA WEBU (Zlatá linka) */
+  header { 
+    text-align: center; 
+    border-bottom: 2px solid #D4AF37; /* Zlatá oddělovací čára */
+    padding-bottom: 30px; 
+    margin-bottom: 50px;
+  }
+
+  /* ODKAZY (Zlatá) */
+  a { 
+    color: #D4AF37; /* Zlatá barva odkazů */
+    text-decoration: none; /* Odstraní podtržení odkazů */
+  }
+  a:hover { 
+    text-decoration: underline; /* Podtrhne odkaz, když na něj najedeš myší */
+  }
+
+  /* DOPLŇKOVÝ TEXT - datum atd. (Šedá) */
+  .sedy-text {
+    color: #888888;
+    font-size: 0.9em;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* NASTAVENÍ PRO OBRÁZKY */
+  img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; /* Lehce zakulacené rohy fotky */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 </style>
 </head>
 <body>
+
 <header>
-<h1>Nečum</h1>
+  <h1>Jan Voříšek</h1>
+  <p class="sedy-text">Myšlenky, poznámky a osobní blog</p>
 </header>
+
 <main>
-<article>
-</article>
+  <article>
+    <h2>O minimalismu a začátcích</h2>
+    <p class="sedy-text">Publikováno: 21. února 2026</p>
+    
+    <p>Ahoj! Tohle je můj úplně první článek. Rozhodl jsem se, že si vytvořím web přesně podle sebe. Žádné složité systémy, žádné reklamy, jen čistý text a prostor pro myšlenky.</p>
+    
+    <p>Inspirací mi jsou autoři jako Cal Newport. Líbí se mi jejich přístup: <strong>méně je někdy více</strong>.</p>
+    
+    <p>Pokud tě zajímá, co dělám, můžeš se podívat na můj <a href="#">profil na GitHubu</a> (sem si pak můžeš dát nějaký svůj reálný odkaz).</p>
+  </article>
 </main>
+
 </body>
 </html>
