@@ -3,4 +3,4 @@ layout: default
 title: "Vítejte"
 ---
 
-Vítejte na mém webu `vorisek.one`. 
+Vítejte na mém webu!
