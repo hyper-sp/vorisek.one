@@ -1,0 +1,5 @@
+title: Patrik Voříšek
+description: Můj minimalistický osobní blog.
+url: "https://vorisek.one"
+# Říkáme Jekyllu, ať z textů dělá úryvky pro hlavní stránku
+excerpt_separator: ""
