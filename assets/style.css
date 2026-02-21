@@ -40,11 +40,10 @@ nav a:hover {
 }
 /* Styl pro aktivní odkaz v menu */
 nav a.active {
-  color: #D4AF37; /* Tvá zlatá barva */
+  color: #D4AF37 !important; /* !important zajistí, že zlatá vyhraje nad šedou */
   font-weight: bold;
-  border-bottom: 1px solid #D4AF37; /* Volitelné: jemná zlatá linka pod textem v menu */
+  border-bottom: 2px solid #D4AF37;
 }
-
 /* Aby jméno v banneru nemělo podtržení, i když je to teď odkaz */
 header h1 a {
   color: #000000;
