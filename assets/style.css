@@ -1,6 +1,6 @@
 /* ZÁKLADNÍ BARVY A PÍSMO */
 body {
-  font-family: Georgia, serif;
+  font-family:'Raleway', sans-serif;
   background-color: #ffffff; /* Bílé pozadí */
   color: #333333; /* Tmavě šedý text pro lepší čitelnost */
   margin: 0;
@@ -26,7 +26,7 @@ nav {
 }
 
 nav a {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family:'Raleway', sans-serif;
   color: #888888; /* Šedá barva odkazů */
   text-decoration: none;
   text-transform: uppercase;
@@ -41,7 +41,7 @@ nav a:hover {
 
 /* TVOJE JMÉNO V BANNERU */
 header h1 {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #000000; /* Černé jméno */
   margin: 0;
   font-size: 32px;
@@ -79,7 +79,7 @@ main {
   color: #D4AF37;
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
 }
 
