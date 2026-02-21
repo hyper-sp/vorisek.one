@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Moje cesta k vlastnímu webu"
+title: "Vítejte"
 ---
 
 Vítejte na mém webu `vorisek.one`. 
