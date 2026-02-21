@@ -13,9 +13,9 @@
 
   <header>
     <nav>
-      <a href="/o-mne.html" {% if page.title == "O mně" %}class="active"{% endif %}>O mně</a>
-      <a href="/projekty.html" {% if page.title == "Projekty" %}class="active"{% endif %}>Projekty</a>
-      <a href="/kontakt.html" {% if page.title == "Kontakt" %}class="active"{% endif %}>Kontakt</a>
+      <a href="/o-mne.html" {% if page.url contains 'o-mne' %}class="active"{% endif %}>O mně</a>
+      <a href="/projekty.html" {% if page.url contains 'projekty' %}class="active"{% endif %}>Projekty</a>
+      <a href="/kontakt.html" {% if page.url contains 'kontakt' %}class="active"{% endif %}>Kontakt</a>
     </nav>
     <h1><a href="/" style="text-decoration: none; color: inherit;">Patrik Voříšek</a></h1>
   </header>
