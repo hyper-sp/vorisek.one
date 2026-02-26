@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://hyper-sp.github.io/vorisek.one/sitemap.xml

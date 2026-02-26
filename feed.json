@@ -1,0 +1,25 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "vorisek.one",
+    "description": "",
+    "home_page_url": "https://hyper-sp.github.io/vorisek.one",
+    "feed_url": "https://hyper-sp.github.io/vorisek.one/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Patrik"
+    },
+    "items": [
+        {
+            "id": "https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post.html",
+            "url": "https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post.html",
+            "title": "Tohl je nový post",
+            "author": {
+                "name": "Patrik"
+            },
+            "tags": [
+            ],
+            "date_published": "2026-02-26T23:40:00+01:00",
+            "date_modified": "2026-02-26T23:40:00+01:00"
+        }
+    ]
+}
