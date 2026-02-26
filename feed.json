@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "vorisek.one",
+    "title": "Patrik Voříšek",
     "description": "",
     "home_page_url": "https://hyper-sp.github.io/vorisek.one",
     "feed_url": "https://hyper-sp.github.io/vorisek.one/feed.json",
@@ -10,8 +10,8 @@
     },
     "items": [
         {
-            "id": "https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post.html",
-            "url": "https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post.html",
+            "id": "https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post/",
+            "url": "https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post/",
             "title": "Tohl je nový post",
             "author": {
                 "name": "Patrik"

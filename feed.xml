@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>vorisek.one</title>
+    <title>Patrik Voříšek</title>
     <link href="https://hyper-sp.github.io/vorisek.one/feed.xml" rel="self" />
     <link href="https://hyper-sp.github.io/vorisek.one" />
     <updated>2026-02-26T23:40:00+01:00</updated>
@@ -14,8 +14,8 @@
         <author>
             <name>Patrik</name>
         </author>
-        <link href="https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post.html"/>
-        <id>https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post.html</id>
+        <link href="https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post/"/>
+        <id>https://hyper-sp.github.io/vorisek.one/tohl-je-novy-post/</id>
 
         <updated>2026-02-26T23:40:00+01:00</updated>
             <summary></summary>
