@@ -130,12 +130,63 @@ ul {
     gap: var(--spacing-md);
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
 .nav-link {
     font-size: 0.95rem;
     font-weight: 500;
     color: var(--color-grey-dark);
     position: relative;
     padding: 0.25rem 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-black);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-gold);
+    transition: width var(--transition-fast);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.lang-link {
+    color: var(--color-grey-medium);
+    padding: 0.25rem;
+    position: relative;
+}
+
+.lang-link:hover,
+.lang-link.active {
+    color: var(--color-black);
+}
+
+.lang-sep {
+    color: var(--color-grey-light);
+    cursor: default;
 }
 
 .nav-link:hover,
@@ -576,6 +627,11 @@ main {
     .nav-list {
         flex-direction: column;
         gap: var(--spacing-sm);
+    }
+
+    .lang-switch {
+        display: none;
+        /* Hide on smallest screens, optionally we could move it inside the mobile menu */
     }
 
     .nav-link {
