@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrik Voříšek - Psychologist & Writer</title>
-    <meta name="description" content="Personal website, blog, and psychology portfolio of Patrik Voříšek.">
+    <title>Blog - Patrik Voříšek</title>
+    <meta name="description" content="Essays, stories, and thoughts by Patrik Voříšek.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link
@@ -23,34 +23,35 @@
             </button>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
                     <li><a href="about.html" class="nav-link">Psychology</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-content">
-                <h1 class="hero-title">Exploring the depths of the human mind.</h1>
-                <p class="hero-subtitle">I'm Patrik Voříšek, a psychologist and writer dedicated to understanding our
-                    narratives and sharing insights on personal growth.</p>
-                <div class="hero-cta">
-                    <a href="about.html" class="btn btn-primary">My Practice</a>
-                    <a href="blog.html" class="btn btn-secondary">Read Stories</a>
-                </div>
-            </div>
-        </section>
+    <main class="page-main">
+        <div class="page-header container">
+            <h1 class="page-title">Stories & Ideas</h1>
+            <p class="page-subtitle">Reflections on human behavior, society, and the search for meaning.</p>
+        </div>
 
-        <section class="recent-posts section">
+        <section class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Latest Stories</h2>
-                    <a href="blog.html" class="section-link">View all stories &rarr;</a>
-                </div>
-                <div class="grid posts-grid">
+                <div class="grid posts-grid-large">
+                    <!-- Featured Post -->
+                    <article class="post-card featured-post">
+                        <div class="post-card-content">
+                            <span class="post-category">Featured</span>
+                            <h3 class="post-title"><a href="#">The Illusion of Complete Control</a></h3>
+                            <p class="post-excerpt">Understanding the delicate balance between agency and acceptance.
+                                Why letting go of the need to manage every outcome paradoxically increases our
+                                effectiveness.</p>
+                            <span class="post-date">November 5, 2023</span>
+                        </div>
+                    </article>
+
                     <article class="post-card">
                         <div class="post-card-content">
                             <span class="post-category">Reflections</span>
@@ -60,6 +61,7 @@
                             <span class="post-date">October 12, 2023</span>
                         </div>
                     </article>
+
                     <article class="post-card">
                         <div class="post-card-content">
                             <span class="post-category">Psychology</span>
@@ -67,6 +69,16 @@
                             <p class="post-excerpt">Practical approaches to finding stillness in a world that demands
                                 constant attention and emotional labor.</p>
                             <span class="post-date">September 28, 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-card-content">
+                            <span class="post-category">Stories</span>
+                            <h3 class="post-title"><a href="#">A Quiet Afternoon in Prague</a></h3>
+                            <p class="post-excerpt">Musings from a cafe window in Malá Strana, watching the intertwining
+                                lives of strangers.</p>
+                            <span class="post-date">September 10, 2023</span>
                         </div>
                     </article>
                 </div>
