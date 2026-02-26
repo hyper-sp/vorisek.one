@@ -116,13 +116,24 @@ ul {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 700;
     letter-spacing: -0.5px;
+    display: inline-flex;
+    align-items: center;
 }
 
-.logo .dot {
+.logo .bracket {
+    color: var(--color-black);
+    font-weight: 800;
+    /* Extra bold for stark contrast */
+    font-size: 1.25em;
+    line-height: 1;
+}
+
+.logo .name {
     color: var(--color-gold);
+    margin: 0 0.4rem;
 }
 
 .nav-list {
@@ -243,12 +254,12 @@ ul {
     top: 18px;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
+    /* Bolder button text */
     border-radius: 4px;
     cursor: pointer;
     transition: all var(--transition-fast);
@@ -256,25 +267,29 @@ ul {
 }
 
 .btn-primary {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    border: 1px solid var(--color-black);
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: 1px solid var(--color-gold);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    border-color: var(--color-black);
 }
 
 .btn-secondary {
     background-color: transparent;
     color: var(--color-black);
-    border: 1px solid var(--color-grey-medium);
+    border: 2px solid var(--color-black);
+    /* Bolder border */
 }
 
 .btn-secondary:hover {
-    border-color: var(--color-black);
-    background-color: var(--color-grey-light);
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+    background-color: var(--color-black);
+    /* High contrast hover */
 }
 
 .btn-full {
@@ -345,10 +360,11 @@ main {
     margin: 0 auto;
 }
 
-/* Hero Section */
 .hero {
     padding: var(--spacing-xl) 0;
-    background-color: var(--color-grey-light);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    /* High visual impact */
     position: relative;
     overflow: hidden;
 }
@@ -361,7 +377,7 @@ main {
     width: 60%;
     height: 200%;
     background: radial-gradient(circle, var(--color-gold-light) 0%, transparent 70%);
-    opacity: 0.5;
+    opacity: 0.9;
     pointer-events: none;
 }
 
@@ -374,11 +390,12 @@ main {
 .hero-title {
     font-size: clamp(3rem, 5vw, 4.5rem);
     margin-bottom: var(--spacing-sm);
+    color: var(--color-white);
 }
 
 .hero-subtitle {
     font-size: 1.25rem;
-    color: var(--color-grey-dark);
+    color: var(--color-grey-light);
     margin-bottom: var(--spacing-md);
     max-width: 600px;
 }
