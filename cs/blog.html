@@ -1,118 +1,30 @@
-<!DOCTYPE html>
-<html lang="cs">
+---
+layout: default_cs
+title: "Blog - Patrik Voříšek"
+---
+<div class="page-header container">
+    <h1 class="page-title">Příběhy a myšlenky</h1>
+    <p class="page-subtitle">Úvahy o lidském chování, společnosti a hledání smyslu.</p>
+</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Patrik Voříšek</title>
-    <meta name="description" content="Eseje, příběhy a myšlenky Patrika Voříška.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <!-- Fixed font weight import to include bolder weights required for headers -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">Patrik Voříšek<span class="dot">.</span></a>
-            <div class="header-right">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="index.html" class="nav-link">Domů</a></li>
-                        <li><a href="blog.html" class="nav-link active">Blog</a></li>
-                        <li><a href="about.html" class="nav-link">Psychologie</a></li>
-                    </ul>
-                </nav>
-                <div class="lang-switch">
-                    <a href="../blog.html" class="lang-link">EN</a>
-                    <span class="lang-sep">|</span>
-                    <a href="blog.html" class="lang-link active">CS</a>
+<section class="section">
+    <div class="container">
+        <div class="grid posts-grid-large">
+            {% assign cs_posts = site.posts | where: "lang", "cs" %}
+            {% for post in cs_posts %}
+            <article class="post-card {% if forloop.first %}featured-post{% endif %}">
+                <div class="post-card-content">
+                    <span class="post-category">{% if forloop.first %}Doporučené{% else %}{{ post.category | default:
+                        'Příběh' }}{% endif %}</span>
+                    <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                    <p class="post-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 30
+                        }}</p>
+                    <span class="post-date">{{ post.date | date: "%d. %m. %Y" }}</span>
                 </div>
-                <button class="mobile-nav-toggle" aria-label="Přepnout navigaci">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+            </article>
+            {% else %}
+            <p>Zatím žádné příběhy. Zkuste to později!</p>
+            {% endfor %}
         </div>
-    </header>
-
-    <main class="page-main">
-        <div class="page-header container">
-            <h1 class="page-title">Příběhy a myšlenky</h1>
-            <p class="page-subtitle">Úvahy o lidském chování, společnosti a hledání smyslu.</p>
-        </div>
-
-        <section class="section">
-            <div class="container">
-                <div class="grid posts-grid-large">
-                    <!-- Featured Post -->
-                    <article class="post-card featured-post">
-                        <div class="post-card-content">
-                            <span class="post-category">Doporučené</span>
-                            <h3 class="post-title"><a href="#">Iluze úplné kontroly</a></h3>
-                            <p class="post-excerpt">Porozumění křehké rovnováze mezi jednáním a přijetím.
-                                Proč opuštění potřeby řídit každý výsledek paradoxně zvyšuje naši efektivitu.</p>
-                            <span class="post-date">5. listopadu 2023</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-card-content">
-                            <span class="post-category">Úvahy</span>
-                            <h3 class="post-title"><a href="#">Architektura našich myšlenek</a></h3>
-                            <p class="post-excerpt">Jak neviditelné hranice, které si sami stanovujeme, formují naše
-                                každodenní prožitky a dlouhodobou pohodu.</p>
-                            <span class="post-date">12. října 2023</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-card-content">
-                            <span class="post-category">Psychologie</span>
-                            <h3 class="post-title"><a href="#">Navigace moderní úzkostí</a></h3>
-                            <p class="post-excerpt">Praktické přístupy k nalezení klidu ve světě, který vyžaduje
-                                neustálou pozornost a emocionální zapojení.</p>
-                            <span class="post-date">28. září 2023</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-card-content">
-                            <span class="post-category">Příběhy</span>
-                            <h3 class="post-title"><a href="#">Klidné odpoledne v Praze</a></h3>
-                            <p class="post-excerpt">Přemítání z okna kavárny na Malé Straně, sledování propletajících se
-                                životů cizinců.</p>
-                            <span class="post-date">10. září 2023</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <span class="logo">Patrik Voříšek<span class="dot">.</span></span>
-                <p>Psycholog, spisovatel a myslitel žijící v České republice.</p>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Domů</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">Psychologie</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2023 Patrik Voříšek. Všechna práva vyhrazena.</p>
-        </div>
-    </footer>
-
-    <script src="../js/main.js"></script>
-</body>
-
-</html>
+    </div>
+</section>
