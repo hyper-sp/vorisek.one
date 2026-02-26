@@ -1,0 +1,13 @@
+---
+layout: default_cs
+---
+<div class="page-header container">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <p class="page-subtitle">{{ page.date | date: "%d. %m. %Y" }}</p>
+</div>
+
+<section class="section">
+    <div class="container" style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
+        {{ content }}
+    </div>
+</section>
